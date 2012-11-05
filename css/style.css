@@ -1,0 +1,225 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/*** @CORE ***/
+
+
+body {
+  font-size:100%;
+  line-height:1.5;
+  font-family:'PT Serif', Georgia, Baskerville Old Face;
+  background: #eee url(../images/bg.png);
+}
+
+.wrapper {
+  width:60%;
+  margin:0 auto;
+}
+
+a {
+  color:#0084ff;
+  text-decoration:none;
+}
+
+/*** @TYPOGRAPHY ***/
+
+/***
+Formula for Vertical Rythym 
+
+Find a number divisible
+by base number larger than
+font size px. 
+
+This number is in pixels,
+to be divided by 16, then
+by the font-size in em.
+
+You get line-height.
+
+***/
+
+h1,h2,h3,h4,h5,h6,
+ul,ol,dl,p,address,figure,pre,fieldset,table,hr, .island,.media{
+  margin-bottom:24px;
+  margin-bottom:1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', 'Verdana', 'Helvetica', Arial;
+  font-weight:inherit;
+}
+
+h1,.alpha{
+  font-size:2em;      /* 32px */
+  line-height:1.5;    /* 48px */
+}
+h2{
+  font-size:1.5em;    /* 24px */
+  line-height:1;      /* 24px */
+}
+h3{
+  font-size:1.25em;   /* 20px */
+  line-height:1.2;    /* 24px */
+}
+h4{
+  font-size:1.125em;    /* 18px */
+  line-height:1.333;    /* 24px */
+}
+h5{
+  font-weight:bold;
+}
+h5,
+h6{
+  font-size:1em;      /* 16px */
+  line-height:1.5;    /* 24px */
+}
+
+.giga {
+  font-size:3em;
+  line-height:1em;
+  text-align:center;
+  font-family:PT Serif;
+}
+
+
+/*** @HEADER ***/
+
+.branding {
+
+}
+
+  /*** @NAV ***/
+
+  .main-menu {
+    text-align:center;
+  }
+
+  .main-menu ul {
+    padding:0;
+  }
+
+  .main-menu li, button {
+    list-style-type:none;
+    display:inline;
+    font-family:'PT Sans';
+    padding:.5em .75em;
+    border-radius:1em;
+    background:#fafafa url(../images/bg.png);
+    border:1px solid #ddd;
+    margin-right:1em;
+    text-align:center;
+
+
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    transition:all .3s ease;
+
+  }
+
+  .main-menu li:hover {
+    padding:.3em .75em .7em .75em;
+  }
+
+  .main-menu a {
+    border:none;
+    color:#666;
+    text-decoration:none;
+  }
+
+
+/*** @PRIMARY ***/
+
+.primary {
+  position:relative;
+  padding:2em 3em 4em;
+  border:1px solid #ddd;
+  background:white;
+  border-radius:.5em;
+  margin-bottom:1.5em;
+  overflow:hidden;
+}
+
+#about, #motive, #contact {
+  -webkit-transition:opacity 1s ease;
+  -moz-transition:opacity 1s ease;
+  -o-transition:opacity 1s ease;
+  -ms-transition:opacity 1s ease;
+  transition:opacity 1s ease;
+}
+
+/*** @COLOPHON ***/
+
+.colophon {
+  font-size:.75em;
+  line-height:2em;
+  background:#333;
+  border-radius:1em;
+  color:white;
+  text-align:center;
+  text-shadow:1px 1px #black;
+  padding:.5em 1em;
+}
+
+.colophon a {
+  color:white;
+  border-bottom:1px solid #0084ff;
+  text-decoration:none;
+
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    transition:all .3s ease;
+
+}
+
+.colophon a:hover {
+  color: #0084ff;
+  border-bottom:none;
+}
+
+
+/*** @FORM ***/
+
+input,textarea {
+  display:block;
+}
+
+input, textarea {
+  margin-bottom:.75em;
+  border:1px solid #ddd;
+  border-radius:.5em;
+  padding:.3em;
+  width:50%;
+}
+
+textarea {
+  height:10em;
+}
+
+form {
+  margin-bottom:3em;
+}
+
+input:focus, textarea:focus {
+  border:1px solid #0084ff;
+  outline:none;
+  }
+
+
+@media only screen and (max-width : 1000px) {
+  .wrapper {width: 80%;}
+}
+
+@media only screen and (max-width : 600px) {
+  html {font-size:85%;}
+}
+
+@media only screen and (max-width : 320px) {
+  html {font-size:75%;}
+  .wrapper {width:90%;}
+}
